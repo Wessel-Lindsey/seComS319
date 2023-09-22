@@ -1,0 +1,109 @@
+Assignment 01: Catalog of Products
+
+[Total Points: 100]
+
+Assignment Due: Tuesday, September 23th, 2023, 11:59PM
+
+ 
+
+Overview
+This assignment is important to prepare the organization of the ideas that you might have for the Midterm Project. Although your mid-term project may be totally different from what you will do in this task, this task contains many of the requirements that will be requested to be fulfilled in the mid-term project.
+
+ 
+
+You will download the Examples from the Bootstrap web page and will select the template of your preference. For your selection you must consider the example that fits better according to your idea of the Midterm Project.
+
+ 
+
+This assignment has been focused on the main idea of “Catalog of Products” shown in class the Wednesday September 13th, the Catalog of Flowers.  The instructions to develop this assignment are closely related to what we developed in the Activity during class where we constructed a Catalog of Flowers.
+
+Although the activity during class where we add flowers and text is not a catalog for sales, it can still be seen as a catalog of products that you want to advertise. However, you can select a different example from Bootstrap to develop your Assignment 01.
+
+ 
+
+You will collect images and text from the Internet or created from your original creativity, such as pictures using your cellular phone or any camera. And the text can be written by yourself according to the images collected or created.
+
+Remember that if you copy images from Internet pages, you must take into consideration that many pages prohibit copying images for commercial purposes. Please review the privacy policies.
+
+ 
+
+This assignment will be developed by the student members of the Team formed for Team works. The work developed must be the product of the effort of the two students on the team. Sharing images and text with students on other teams is strictly prohibited.
+
+ 
+
+It is strictly prohibited to use the images of flowers and text that were used in the activity during class.
+
+You will create a Web site with the next characteristics:
+The web site will contain at least 2 web pages de catalog de products.
+The web site will have one third web page with the credits of the developers, the students. This web page MUST have the name of the course (id and name), name of the students, email of the students, date and name of the professor. This web page is expected to have a CSS style.
+One page will show products of one category or type and the second page will show products of different category or type.
+One web page “index.html” can be one of the web pages of products. The index.html is the root file of the Web site.
+The name of the second catalog of products can have a different name.
+Every web page will have at least a set of 4 images and its corresponding text as shown in the Activity in class where we use flowers and text to describe the flowers.
+(The text is in free format and can be compose of one or several sentences) 
+
+Use Bootstrap CSS style to improve managing of containers.
+Implement a header of your preference. Change the header default from Bootstrap.
+Implement a footer of your preference. Change the footer default from Bootstrap.
+Implement a top or left Navigation bar. If you implement the default navigation bar from Bootstrap, you must be sure that ALL the options of the menu work appropriately.
+The navigation bar MUST allow you to open the different web pages of this Web site: the two web pages with products and the page with information about the students.
+
+The navigation bar can optionally allow you to visit one page located on the Internet.
+
+Every page included in this web site must have a Navigation Bar to be able to return to the main catalog or to the other pages too.
+
+The images MUST be contained in a folder where all of them are contained.
+Every image MUST be added to its corresponding text. The text can be a description of the image (product). Will be penalized if the text is one sentence repeated several times or if the text is a text with no sense that does not correspond to the images.
+ 
+
+ 
+
+The name of the principal Web page will be index.html and the name of secondary web pages will be according to the preferences of the students. It is recommended name “about.html” the page with the information of the students.
+
+This assignment if composed only of html, CSS and images (png, jpg, etc).
+
+ 
+
+ 
+
+ 
+
+What to Submit:
+ 
+
+Include all HTML and CSS files.
+Include the folder with all images files.
+Compress the files to a .zip file and rename it “Assignment01_TEAMNUMBER.zip”.
+Submit via Canvas the compressed file (.zip).
+ 
+
+*Where TEAMNUMBER is the number in the column Team in Canvas where is the list of teams and team members. That will allow the TA and instructor to review and assign the same grade to the team members.
+
+ 
+
+*It is required submit ONLY ONE compressed file (.zip) per Team.
+
+ 
+
+ 
+
+ 
+
+The Rubric to grade this assignment is as follows:
+This Assignment has a total value of 100 points.
+
+Late submission will deduct 5 points per day late.
+
+ 
+
+- Was the file named Assignment01_TEAMNUMBER.zip? ______ / 5
+
+- Has the web site one index named index.html, one second html file with products and one third file with the student and class information and one directory with the images? ______ / 5
+
+- Has the web site at least 4 products and each product have its corresponding description in text format per page? ______ / 50
+
+- Has the web site one page with information about the students and the information about the class? ___/10
+
+- Has the web site a functional Navigation bar on every page working properly? ______ / 10
+
+- Has the web site and appropriate CSS style that reflect effort and creativity? ______ / 20
