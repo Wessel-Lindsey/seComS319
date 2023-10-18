@@ -1,0 +1,52 @@
+{
+    "soundClips": [
+        {
+            "title": "Animation Demo",
+            "sound": "./soundClips/Animation_Demo.mp3",
+            "image": "./images/",
+            "transcript": "..."
+        },
+        {
+            "title": "Audiobook - Adult Non-Fiction Book",
+            "sound": "./soundClips/",
+            "image": "this2",
+            "transcript": "..."
+        },
+        {
+            "title": "Audiobook - Childrnes Book",
+            "sound": "./soundClips/",
+            "image": "this2",
+            "transcript": "..."
+        },
+        {
+            "title": "Commercial",
+            "sound": "./soundClips/",
+            "image": "this2",
+            "transcript": "..."
+        },
+        {
+            "title": "eLearning",
+            "sound": "./soundClips/",
+            "image": "this2",
+            "transcript": "..."
+        },
+        {
+            "title": "Self Development",
+            "sound": "./soundClips/",
+            "image": "this2",
+            "transcript": "..."
+        },
+        {
+            "title": "Telephone and IVR",
+            "sound": "./soundClips/",
+            "image": "this2",
+            "transcript": "..."
+        },
+        {
+            "title": "Video Game",
+            "sound": "./soundClips/",
+            "image": "this2",
+            "transcript": "..."
+        }
+    ]
+}
