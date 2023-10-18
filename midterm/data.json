@@ -1,52 +1,51 @@
 {
-    "soundClips": [
+    "soundSamples": [
         {
             "title": "Animation Demo",
-            "sound": "./soundClips/Animation_Demo.mp3",
-            "image": "./images/",
-            "transcript": "..."
+            "soundSample": "./soundClips/Animation_Demo.mp3",
+            "text": "This is a sample of voice acting for a animated piece, be it a show, movie, or short."
         },
         {
-            "title": "Audiobook - Adult Non-Fiction Book",
-            "sound": "./soundClips/",
-            "image": "this2",
-            "transcript": "..."
+            "title": "Audiobook Adult Nonfiction Demo",
+            "soundSample": "./soundClips/Audiobook_Demo_Adult_Non-Fiction.mp3",
+            "text": "This is a sample of non-fiction, work that it is imperative to have a good voice for. Your audio book's voice actor is incredilbly important, so make sure you go with the right narrator for you."
         },
         {
-            "title": "Audiobook - Childrnes Book",
-            "sound": "./soundClips/",
-            "image": "this2",
-            "transcript": "..."
+            "title": "Audiobook Children Fiction Demo",
+            "soundSample": "./soundClips/Audiobook_Demo_Childrens_Fiction.mp3",
+            "text": "This is an animation sample"
         },
         {
-            "title": "Commercial",
-            "sound": "./soundClips/",
-            "image": "this2",
-            "transcript": "..."
+            "title": "Commercial Demo",
+            "soundSample": "./soundClips/Commercial_Demo.mp3",
+            "text": "This is an animation sample"
         },
         {
-            "title": "eLearning",
-            "sound": "./soundClips/",
-            "image": "this2",
-            "transcript": "..."
+            "title": "eLearning Demo",
+            "soundSample": "./soundClips/eLearning_Training_Demo.mp3.mp3",
+            "text": "Having previously been a teacher, I have "
         },
         {
-            "title": "Self Development",
-            "sound": "./soundClips/",
-            "image": "this2",
-            "transcript": "..."
+            "title": "Self Development Demo",
+            "soundSample": "./soundClips/Self_Development_Demo.mp3",
+            "text": "This is an animation sample"
         },
         {
-            "title": "Telephone and IVR",
-            "sound": "./soundClips/",
-            "image": "this2",
-            "transcript": "..."
+            "title": "Telephone and IRV Demo",
+            "soundSample": "./soundClips/Telephone_and_IVR_Demo.mp3",
+            "text": "This is an animation sample"
         },
         {
-            "title": "Video Game",
-            "sound": "./soundClips/",
-            "image": "this2",
-            "transcript": "..."
+            "title": "Video Game Demo",
+            "soundSample": "./soundClips/Video_Game_Demo.mp3",
+            "text": "This is an animation sample"
+        }
+    ],
+    "homePage": [
+        {
+            "title": "Slade Hovick",
+            "pic": "./images/Headshot1.jpg",
+            "text": "A bachelor's in math education, a master's in eductional psychology, over a decade of experience as an award winning secondary and post-secondary educator, and now...a voice actor?! <br> Well, I also have two decades of experience as an actor and acting coach so there's that.<br> Being a full-time voice actor had been a long-time dream of mine and now I am loving every minute of it.<br> So, take a listen to my demos and contact me today to give your project a voice!"
         }
     ]
-}
+  }

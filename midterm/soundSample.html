@@ -1,6 +1,9 @@
 <!doctype html>
 <html lang="en" data-bs-theme="auto">
-  <head><script src="../assets/js/color-modes.js"></script>
+  <head>
+    <!-- <script src="../assets/js/color-modes.js"></script> -->
+    <script src="./contactForm.js"></script>
+    <script src="./index.js"></script>
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10,17 +13,12 @@
     <title>Slade Hovick Web Page</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/blog/">
-
-    
-
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
-
-<link href="./bootstrap.min.css" rel="stylesheet">
+    <link href="index.css" rel="stylesheet">
+    <link href="contact.css" rel="stylesheet">
     
     <!-- Custom styles for this template -->
     <link href="https://fonts.googleapis.com/css?family=Playfair&#43;Display:700,900&amp;display=swap" rel="stylesheet">
     <!-- Custom styles for this template -->
-    <link href="index.css" rel="stylesheet">
   </head>
   <body>
     <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
@@ -39,8 +37,6 @@
       </symbol>
     </svg>
 
-
-    
 <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
   <symbol id="aperture" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24">
     <circle cx="12" cy="12" r="10"/>
@@ -57,7 +53,7 @@
 <div class="container">
   <header class="border-bottom lh-1 py-3">
     <div class="row flex-nowrap justify-content-between align-items-center">
-      <div class="col-4 pt-1">
+      <div class="col-4 pt-1 opacity-0">
         <a class="btn btn-sm btn-outline-secondary" href="#">
           <svg class="bi me-2 opacity-50 theme-icon" width="1em" height="1em"><use href="#moon-stars-fill"></use></svg>Dark
           <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
@@ -75,7 +71,7 @@
           <span class="visually-hidden" id="bd-theme-text">Toggle theme</span>
         </button>
         <!-- This is where we need to send information -->
-        <ul class="dropdown-menu dropdown-menu-end shadow" aria-labelledby="bd-theme-text" style="padding: 10q; width: 50%;" >
+        <ul class="dropdown-menu dropdown-menu-end shadow" aria-labelledby="bd-theme-text" style="padding: 10q; width: 25%;" >
           <p style="padding: 2%;"> Name</p>
           <input class="form-control" type="text" value placeholder maxlength="250" name="" required="required" >
           <p style="padding: 2%;"> Email</p>
@@ -88,9 +84,9 @@
           <input class="form-control" type="text" value placeholder maxlength="250" name="" required="required" >
           <p style="padding: 2%;"> How did you hear about me?</p> 
           <input class="form-control" type="text" value placeholder maxlength="250" name="" required="required" >
+          <button class="btn btn-sm btn-outline-secondary py-2 d-flex align-items-end submit_button"> Submit</button>
         </ul>
       </div>
-
     </div>
   </header>
 
@@ -98,123 +94,101 @@
   <div class="nav-scroller py-1 mb-3 border-bottom">
     <nav class="nav nav-underline justify-content-between">
       <a class="nav-item nav-link link-body-emphasis active"></a>
-      <a class="nav-item nav-link link-body-emphasis active" href="./index.html">Home</a>
-      <a class="nav-item nav-link link-body-emphasis" href="./soundSampleLight.html">Sound Samples</a>
-      <a class="nav-item nav-link link-body-emphasis" href="./moreLight.html">More</a>
+      <a class="nav-item nav-link link-body-emphasis" href="./index.html">Home</a>
+      <a class="nav-item nav-link link-body-emphasis active" href="./soundSample.html">Sound Samples</a>
+      <a class="nav-item nav-link link-body-emphasis" href="./moreInfo.html">More</a>
       <a class="nav-item nav-link link-body-emphasis active"></a>
     </nav>
   </div>
 </div>
-
-<main class="container">
-
-  <div class="row mb-2"> 
-    <div class="col">
-      <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">  
-        <div class="col p-4 d-flex flex-column justify-content-end align-items-center"> 
-          <strong class="d-inline-block mb-2 text-primary-emphasis">World</strong>
-          <h3 class="mb-0">Featured post</h3>
-          <div class="mb-1 text-body-secondary">Nov 12</div>
-          <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
-          <a href="#" class="icon-link gap-1 icon-link-hover stretched-link">
-            Continue reading
-            <svg class="bi"><use xlink:href="#chevron-right"/></svg>
-          </a>
+<main class="container-fluid">
+  <div class="row align-items-start">
+    <div class="col-sm-3 py-3 zoom">
+      <div id="card1" class="card collapse show shadow-sm">
+        <div class="card-body">
+          <h3 id="titleDemo1" class="card-text"></h3>
+          <p id="txtDemo1" class="card-text"></p>
         </div>
-        <div class="col-auto d-none d-lg-block">
-          <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+        <div id="mp3Demo1" class="center"></div> 
+      </div>
+    </div>
+    <div class="col-sm-3 py-3 zoom">
+      <div id="card2" class="card collapse show shadow-sm">
+        <div class="card-body">
+          <h3 id="titleDemo2" class="card-text"></h3>
+          <p id="txtDemo2" class="card-text"></p>
         </div>
+        <div id="mp3Demo2" class="center"></div> 
+      </div>
+    </div>
+    <div class="col-sm-3 py-3 zoom">
+      <div id="card3" class="card collapse show shadow-sm">
+        <div class="card-body">
+          <h3 id="titleDemo3" class="card-text"></h3>
+          <p id="txtDemo3" class="card-text"></p>
+        </div>
+        <div id="mp3Demo3" class="center"></div> 
+      </div>
+    </div>
+    <div class="col-sm-3 py-3 zoom">
+      <div id="card4" class="card collapse show shadow-sm">
+        <div class="card-body">
+          <h3 id="titleDemo4" class="card-text"></h3>
+          <p id="txtDemo4" class="card-text"></p>
+        </div>
+        <div id="mp3Demo4" class="center"></div> 
+      </div>
+    </div>
+    <div class="col-sm-3 py-3 zoom">
+      <div id="card5" class="card collapse show shadow-sm">
+        <div class="card-body">
+          <h3 id="titleDemo5" class="card-text"></h3>
+          <p id="txtDemo5" class="card-text"></p>
+        </div>
+        <div id="mp3Demo5" class="center"></div> 
+      </div>
+    </div>
+    <div class="col-sm-3 py-3 zoom">
+      <div id="card6" class="card collapse show shadow-sm">
+        <div class="card-body">
+          <h3 id="titleDemo6" class="card-text"></h3>
+          <p id="txtDemo6" class="card-text"></p>
+        </div>
+        <div id="mp3Demo6" class="center"></div> 
+      </div>
+    </div>
+    <div class="col-sm-3 py-3 zoom">
+      <div id="card7" class="card collapse show shadow-sm">
+        <div class="card-body">
+          <h3 id="titleDemo7" class="card-text"></h3>
+          <p id="txtDemo7" class="card-text"></p>
+        </div>
+        <div id="mp3Demo7" class="center"></div> 
+      </div>
+    </div>
+    <div class="col-sm-3 py-3 zoom">
+      <div id="card8" class="card collapse show shadow-sm">
+        <div class="card-body">
+          <h3 id="titleDemo8" class="card-text"></h3>
+          <p id="txtDemo8" class="card-text"></p>
+        </div>
+        <div id="mp3Demo8" class="center"></div> 
       </div>
     </div>
   </div>
-  <div class="row mb-2"> 
-    <div class="col">
-      <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">  
-        <div class="col p-4 d-flex flex-column justify-content-end align-items-center"> 
-          <strong class="d-inline-block mb-2 text-primary-emphasis">World</strong>
-          <h3 class="mb-0">Featured post</h3>
-          <div class="mb-1 text-body-secondary">Nov 12</div>
-          <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
-          <a href="#" class="icon-link gap-1 icon-link-hover stretched-link">
-            Continue reading
-            <svg class="bi"><use xlink:href="#chevron-right"/></svg>
-          </a>
-        </div>
-        <div class="col-auto d-none d-lg-block">
-          <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- <div class="row g-5"> -->
-
-    <!-- <div class="col-md-4"> -->
-      <!-- <div class="position-sticky" style="top: 2rem;"> -->
-        <!-- <div class="p-4 mb-3 bg-body-tertiary rounded">
-          <h4 class="fst-italic">About</h4>
-          <p class="mb-0">Customize this section to tell your visitors a little bit about your publication, writers, content, or something else entirely. Totally up to you.</p>
-        </div> -->
-
-        <!-- <div>
-          <h4 class="fst-italic">Recent posts</h4>
-          <ul class="list-unstyled">
-            <li>
-              <a class="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 link-body-emphasis text-decoration-none border-top" href="#">
-                <svg class="bd-placeholder-img" width="100%" height="96" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
-                <div class="col-lg-8">
-                  <h6 class="mb-0">Example blog post title</h6>
-                  <small class="text-body-secondary">January 15, 2023</small>
-                </div>
-              </a>
-            </li>
-            <li>
-              <a class="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 link-body-emphasis text-decoration-none border-top" href="#">
-                <svg class="bd-placeholder-img" width="100%" height="96" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
-                <div class="col-lg-8">
-                  <h6 class="mb-0">This is another blog post title</h6>
-                  <small class="text-body-secondary">January 14, 2023</small>
-                </div>
-              </a>
-            </li>
-            <li>
-              <a class="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 link-body-emphasis text-decoration-none border-top" href="#">
-                <svg class="bd-placeholder-img" width="100%" height="96" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
-                <div class="col-lg-8">
-                  <h6 class="mb-0">Longer blog post title: This one has multiple lines!</h6>
-                  <small class="text-body-secondary">January 13, 2023</small>
-                </div>
-              </a>
-            </li>
-          </ul>
-        </div> -->
-        
-      <!-- </div> -->
-    <!-- </div> -->
-  <!-- </div> -->
-
 </main>
-
-<footer class="py-5 text-center text-body-secondary bg-body-tertiary">
-  <div class="row flex-nowrap align-items-center">  
+<footer class="py-5 text-body-secondary bg-body-tertiary footer">
+  <div class="row flex-nowrap">  
     <div class="col-1"></div>
     <div class="col-1">
-      <a class="btn btn-sm btn-outline-secondary" href="https://www.linkedin.com/in/voslade/" style="border: 0;" >
-        <img src="./images/new-linkedin-logo-white-black-png.png" width="100">
+      <a class="btn btn-sm btn-outline-secondary " href="https://www.linkedin.com/in/voslade/" style="border: 0;" >
+        <img src="./images/new-linkedin-logo-white-black-png.png" width="75">
       </a>
     </div>
-    <!-- <div class="col-4 align-items-center">
-      <p class="mb-0">
-        <a>email: mail@voslade.com</a>
-      </p>
-    </div> -->
+    <p class="text-center footer_text">
+    <a>email: mail@voslade.com</a> <br> Blog template built for <a href="https://getbootstrap.com/">Bootstrap</a> by <a href="https://twitter.com/mdo">@mdo</a>.
+    </p>
   </div>
-
-  <a>email: mail@voslade.com</a>
-  <p>Blog template built for <a href="https://getbootstrap.com/">Bootstrap</a> by <a href="https://twitter.com/mdo">@mdo</a>.</p>
-
-</footer>
-<script src="./bootstrap.bundle.min.js"></script>
-
-    </body>
+</footer> 
+</body>
 </html>
