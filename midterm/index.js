@@ -56,35 +56,35 @@ function loadSoundClips(soundClips) {
     if (soundClips.soundSamples[i].title === "Animation Demo") {
             mp3Demo1.appendChild(mp3Demo);
             titleDemo1.appendChild(titleDemo);
-            txtDemo1.appendChild(txtDemo);
+            // txtDemo1.appendChild(txtDemo);
         } else if (soundClips.soundSamples[i].title === "Audiobook Adult Nonfiction Demo") {
             mp3Demo2.appendChild(mp3Demo);
             titleDemo2.appendChild(titleDemo);
-            txtDemo2.appendChild(txtDemo);
+            // txtDemo2.appendChild(txtDemo);
         } else if (soundClips.soundSamples[i].title === "Audiobook Children Fiction Demo") {
             mp3Demo3.appendChild(mp3Demo);
             titleDemo3.appendChild(titleDemo);
-            txtDemo3.appendChild(txtDemo);
+            // txtDemo3.appendChild(txtDemo);
         } else if (soundClips.soundSamples[i].title === "Commercial Demo") {
             mp3Demo4.appendChild(mp3Demo);
             titleDemo4.appendChild(titleDemo);
-            txtDemo4.appendChild(txtDemo);
+            // txtDemo4.appendChild(txtDemo);
         } else if (soundClips.soundSamples[i].title === "eLearning Demo") {
             mp3Demo5.appendChild(mp3Demo);
             titleDemo5.appendChild(titleDemo);
-            txtDemo5.appendChild(txtDemo);
+            // txtDemo5.appendChild(txtDemo);
         } else if (soundClips.soundSamples[i].title === "Self Development Demo") {
             mp3Demo6.appendChild(mp3Demo);
             titleDemo6.appendChild(titleDemo);
-            txtDemo6.appendChild(txtDemo);
+            // txtDemo6.appendChild(txtDemo);
         } else if (soundClips.soundSamples[i].title === "Telephone and IRV Demo") {
             mp3Demo7.appendChild(mp3Demo);
             titleDemo7.appendChild(titleDemo);
-            txtDemo7.appendChild(txtDemo);
+            // txtDemo7.appendChild(txtDemo);
         }else if (soundClips.soundSamples[i].title === "Video Game Demo") {
             mp3Demo8.appendChild(mp3Demo);
             titleDemo8.appendChild(titleDemo);
-            txtDemo8.appendChild(txtDemo);
+            // txtDemo8.appendChild(txtDemo);
         }
 
 
