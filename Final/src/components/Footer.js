@@ -22,10 +22,10 @@ function DefaultFooter() {
             </a>
             . Coded by{" "}
             <a
-              href="https://www.creative-tim.com?ref=nukr-default-footer"
+              href="https://github.com/Wessel-Lindsey/seComS319"
               target="_blank"
             >
-              Creative Tim
+              Linsey Wessel and Sam Lane
             </a>
             .
           </div>

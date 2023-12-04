@@ -10,10 +10,10 @@ import {
 import "assets/css/profile.css";
 
 // core components
-import ExamplesNavbar from "components/Navbars/ExamplesNavbar.js";
-import ProfilePageHeader from "components/Headers/ProfilePageHeader.js";
-import DefaultFooter from "components/Footers/DefaultFooter.js";
-import Carousel from "views/index-sections/Carousel.js";
+import ExamplesNavbar from "Navbar.js";
+import ProfilePageHeader from "Header.js";
+import DefaultFooter from "Footer.js";
+import Carousel from "Carousel.js";
 
 function ProfilePage() {
   React.useEffect(() => {
@@ -52,7 +52,7 @@ function ProfilePage() {
             </div>
             <Carousel />
             <div class ="container_sidebyside justify-content-center">
-                <img alt="headshot" src={require("assets/img/images/Headshot2.jpg")} class="headshot"></img>
+                <img alt="headshot" src={require("assets/img/Headshot2.jpg")} class="headshot"></img>
               <div>
                 <h3 className="title">About me</h3>
                 <h5 className="description">

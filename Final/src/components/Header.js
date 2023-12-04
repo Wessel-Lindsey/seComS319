@@ -5,7 +5,7 @@ import { Container } from "reactstrap";
 
 // core components
 
-function ProfilePageHeader() {
+function Header() {
   let pageHeader = React.createRef();
 
   React.useEffect(() => {
@@ -30,13 +30,13 @@ function ProfilePageHeader() {
         <div
           className="page-header-image"
           style={{
-            backgroundImage: "url(" + require("assets/img/images/Headshot3.jpg") + ")" //FIXME Move image down
+            backgroundImage: "url(" + require("assets/img/Headshot3.jpg") + ")" //FIXME Move image down
           }}
           ref={pageHeader}
         ></div>
         <Container>
           <div >
-            <img alt="..." src={require("assets/img/images/volslade_logo-Light.png")}></img>
+            <img alt="..." src={require("assets/img/volslade_logo-Light.png")}></img>
           </div>
         </Container>
       </div>
@@ -44,4 +44,4 @@ function ProfilePageHeader() {
   );
 }
 
-export default ProfilePageHeader;
+export default Header;

@@ -14,17 +14,17 @@ import "assets/css/audio.player.css";
 
 const items = [
   {
-    src: require("assets/img/soundClips/Animation_Demo.mp3"),
+    src: require("assets/soundClips/Animation_Demo.mp3"),
     altText: "Animation",
     caption: "Animation"
   },
   {
-    src: require("assets/img/soundClips/Audiobook_Demo_Adult_Non-Fiction.mp3"),
+    src: require("assets/soundClips/Audiobook_Demo_Adult_Non-Fiction.mp3"),
     altText: "Non-Fiction",
     caption: "Non-Fiction"
   },
   {
-    src: require("assets/img/soundClips/Audiobook_Demo_Childrens_Fiction.mp3"),
+    src: require("assets/soundClips/Audiobook_Demo_Childrens_Fiction.mp3"),
     altText: "Children's Fiction",
     caption: "Children's Fiction"
   },
