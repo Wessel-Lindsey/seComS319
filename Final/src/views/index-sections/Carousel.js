@@ -12,8 +12,6 @@ import {
 
 import "assets/css/audio.player.css";
 
-// core components
-
 const items = [
   {
     src: require("assets/img/soundClips/Animation_Demo.mp3"),
@@ -29,12 +27,65 @@ const items = [
     src: require("assets/img/soundClips/Audiobook_Demo_Childrens_Fiction.mp3"),
     altText: "Children's Fiction",
     caption: "Children's Fiction"
+  },
+  {
+    src: require("assets/img/soundClips/Commercial_Demo.mp3"),
+    altText: "Commercial",
+    caption: "Commercial"
+  },
+  {
+    src: require("assets/img/soundClips/eLearning_Training_Demo.mp3"),
+    altText: "eLearning",
+    caption: "eLearning"
+  },
+  {
+    src: require("assets/img/soundClips/Self_Development_Demo.mp3"),
+    altText: "Self-Development",
+    caption: "Self-Development"
+  },
+  {
+    src: require("assets/img/soundClips/Telephone_and_IVR_Demo.mp3"),
+    altText: "Telephone and IVR",
+    caption: "Telephone and IVR"
+  },
+  {
+    src: require("assets/img/soundClips/Video_Game_Demo.mp3"),
+    altText: "Video Game",
+    caption: "Video Game"
   }
 ];
 
+function getClips() {
+  fetch('http://localhost:8081/get')
+      .then(response => response.json())
+      .then(data => {
+          console.log(data);
+          getMethod(data);
+      })
+};
+function getMethod(myclips) {
+  var mainContainer = document.getElementById("soundClips");
+  for (var i = 0; i < myclips.length; i++) {
+      let title = myclips[i].title;
+      let text = myclips[i].text;
+      let soundSample = myclips[i].soundSample;
+      let div = document.createElement("div");
+      div.innerHTML = `
+        <h3>${title}</h3>
+        ${text} <br>
+        <img src=${soundSample} width="200"> <br> <br>
+        `;
+      console.log(div);
+      items.add(div);
+  }
+}
+
 function CarouselSection() {
+  getClips();
   const [activeIndex, setActiveIndex] = React.useState(0);
   const [animating, setAnimating] = React.useState(false);
+
+
   const onExiting = () => {
     setAnimating(true);
   };
@@ -43,12 +94,12 @@ function CarouselSection() {
   };
   const next = () => {
     if (animating) return;
-    const nextIndex = activeIndex === items.length - 1 ? 0 : activeIndex + 1;
+    const nextIndex = activeIndex === 8 - 1 ? 0 : activeIndex + 1;
     setActiveIndex(nextIndex);
   };
   const previous = () => {
     if (animating) return;
-    const nextIndex = activeIndex === 0 ? items.length - 1 : activeIndex - 1;
+    const nextIndex = activeIndex === 0 ? 8 - 1 : activeIndex - 1;
     setActiveIndex(nextIndex);
   };
   const goToIndex = (newIndex) => {
