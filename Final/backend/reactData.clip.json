@@ -1,0 +1,72 @@
+[{
+  "_id": {
+    "$oid": "656fd05f2bda9facb9e9c851"
+  },
+  "title": "Animation Demo",
+  "soundSample": "https://drive.google.com/uc?id=1tDjV71c29kJ1wNu8jGGuvUljCdsf5Pud",
+  "text": "This is a sample of voice acting for a animated piece, be it a show, movie, or short.",
+  "id": 0
+},
+{
+  "_id": {
+    "$oid": "656ff9312bda9facb9e9c868"
+  },
+  "id": 1,
+  "title": "Audiobook Adult Nonfiction Demo",
+  "soundSample": "https://drive.google.com/uc?id=1Qr--k9qWF94gLKaaUsH_XSKKvUUgNzlU",
+  "text": "This is a sample of non-fiction, work that it is imperative to have a good voice for. Your audio book's voice actor is incredilbly important, so make sure you go with the right narrator for you."
+},
+{
+  "_id": {
+    "$oid": "656ff95c2bda9facb9e9c869"
+  },
+  "id": 2,
+  "title": "Audiobook Children Fiction Demo",
+  "soundSample": "https://drive.google.com/uc?id=1EkNxNjfI1d4u2sAXZ1PWRqqxtEqImcwf",
+  "text": "This is an animation sample"
+},
+{
+  "_id": {
+    "$oid": "656ff9652bda9facb9e9c86a"
+  },
+  "id": 3,
+  "title": "Commercial Demo",
+  "soundSample": "https://drive.google.com/uc?id=1_BkL3vhbc4tP4k0SHCYJyUjwwWOnbtT4",
+  "text": "This is an animation sample"
+},
+{
+  "_id": {
+    "$oid": "656ff96c2bda9facb9e9c86b"
+  },
+  "id": 4,
+  "title": "eLearning Demo",
+  "soundSample": "https://drive.google.com/uc?id=1Z4VQZGsb-YhOB8HanNrnniHiInQgMYyt",
+  "text": "Having previously been a teacher, I have "
+},
+{
+  "_id": {
+    "$oid": "656ff9772bda9facb9e9c86c"
+  },
+  "id": 5,
+  "title": "Self Development Demo",
+  "soundSample": "https://drive.google.com/uc?id=1ke5238SAwm5Xujj-wGs4bba0pgSkF5Xh",
+  "text": "This is an animation sample"
+},
+{
+  "_id": {
+    "$oid": "656ff97e2bda9facb9e9c86d"
+  },
+  "id": 6,
+  "title": "Telephone and IRV Demo",
+  "soundSample": "https://drive.google.com/uc?id=1ZpjOj8Gkqji8yE3YmyKI2IC4MrunE3Bt",
+  "text": "This is an animation sample"
+},
+{
+  "_id": {
+    "$oid": "656ff9842bda9facb9e9c86e"
+  },
+  "id": 7,
+  "title": "Video Game Demo",
+  "soundSample": "https://drive.google.com/uc?id=1S_udmhiS_w3lRyB6XdyxMB-D2JHAbN1X",
+  "text": "This is an animation sample"
+}]
