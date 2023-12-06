@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import axios from 'axios';
 
 // reactstrap components
 import {
@@ -12,78 +13,25 @@ import {
 
 import "assets/css/audio.player.css";
 
-const items = [
-  {
-    src: require("assets/soundClips/Animation_Demo.mp3"),
-    altText: "Animation",
-    caption: "Animation"
-  },
-  {
-    src: require("assets/soundClips/Audiobook_Demo_Adult_Non-Fiction.mp3"),
-    altText: "Non-Fiction",
-    caption: "Non-Fiction"
-  },
-  {
-    src: require("assets/soundClips/Audiobook_Demo_Childrens_Fiction.mp3"),
-    altText: "Children's Fiction",
-    caption: "Children's Fiction"
-  },
-  {
-    src: require("assets/img/soundClips/Commercial_Demo.mp3"),
-    altText: "Commercial",
-    caption: "Commercial"
-  },
-  {
-    src: require("assets/img/soundClips/eLearning_Training_Demo.mp3"),
-    altText: "eLearning",
-    caption: "eLearning"
-  },
-  {
-    src: require("assets/img/soundClips/Self_Development_Demo.mp3"),
-    altText: "Self-Development",
-    caption: "Self-Development"
-  },
-  {
-    src: require("assets/img/soundClips/Telephone_and_IVR_Demo.mp3"),
-    altText: "Telephone and IVR",
-    caption: "Telephone and IVR"
-  },
-  {
-    src: require("assets/img/soundClips/Video_Game_Demo.mp3"),
-    altText: "Video Game",
-    caption: "Video Game"
-  }
-];
-
-function getClips() {
-  fetch('http://localhost:8081/get')
-      .then(response => response.json())
-      .then(data => {
-          console.log(data);
-          getMethod(data);
-      })
-};
-function getMethod(myclips) {
-  var mainContainer = document.getElementById("soundClips");
-  for (var i = 0; i < myclips.length; i++) {
-      let title = myclips[i].title;
-      let text = myclips[i].text;
-      let soundSample = myclips[i].soundSample;
-      let div = document.createElement("div");
-      div.innerHTML = `
-        <h3>${title}</h3>
-        ${text} <br>
-        <img src=${soundSample} width="200"> <br> <br>
-        `;
-      console.log(div);
-      items.add(div);
-  }
-}
-
+var numSoundClips = 0;
 function CarouselSection() {
-  getClips();
+  const [carouselData, setCarouselData] = useState([]);
   const [activeIndex, setActiveIndex] = React.useState(0);
   const [animating, setAnimating] = React.useState(false);
+
+  useEffect(() =>{ 
+    const fetchData = async() => {
+      try{
+        const response = await axios.get('http://localhost:8081/get');
+        setCarouselData(response.data);
+        numSoundClips = response.data.length;
+      }catch (error) {
+        console.error('Error fetching carousel data:', error);
+      }
+    }
+    fetchData();
+  }, []);
+
 
 
   const onExiting = () => {
@@ -94,12 +42,12 @@ function CarouselSection() {
   };
   const next = () => {
     if (animating) return;
-    const nextIndex = activeIndex === 8 - 1 ? 0 : activeIndex + 1;
+    const nextIndex = activeIndex === numSoundClips - 1 ? 0 : activeIndex + 1;
     setActiveIndex(nextIndex);
   };
   const previous = () => {
     if (animating) return;
-    const nextIndex = activeIndex === 0 ? 8 - 1 : activeIndex - 1;
+    const nextIndex = activeIndex === 0 ? numSoundClips - 1 : activeIndex - 1;
     setActiveIndex(nextIndex);
   };
   const goToIndex = (newIndex) => {
@@ -121,24 +69,44 @@ function CarouselSection() {
                 previous={previous}
               >
                 <CarouselIndicators
-                  items={items}
+                  items={carouselData}
                   activeIndex={activeIndex}
                   onClickHandler={goToIndex}
                 />
-                {items.map((item) => {
+
+                {carouselData.map((item, index) => {
                   return (
                     <CarouselItem className="centered"
                       onExiting={onExiting}
                       onExited={onExited}
-                      key={item.src}
-                    >
-                        <div className="carousel-caption d-none d-md-block">
-                          <h3>{item.caption}</h3>
+                      key={index}
+                    > <div className="centered">
+                      <Col className="justify-content-center">
+                        <Row className="justify-content-center">
+                          <div>
+                            <h3>{item.title}</h3>
+                          </div>
+                        </Row>
+                        <Row className="justify-content-center">
+                        <div>
+                          <audio controls>
+                            <source src={item.soundSample} type="audio/mp3"/>
+                              Not working
+                          </audio>
                         </div>
-                        <audio controls src={item.src} className="player"/>
+                        </Row>
+                        <Row className="justify-content-center">
+                          <div>
+                            <br/>
+                            <p>{item.text}</p>
+                          </div>
+                        </Row>
+                        </Col>
+                      </div>
                     </CarouselItem>
                   );
                 })}
+
                 <a
                   className="carousel-control-prev"
                   data-slide="prev"

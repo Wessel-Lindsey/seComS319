@@ -26,7 +26,7 @@ import "assets/scss/now-ui-kit.scss?v=1.5.0";
 import "assets/demo/demo.css?v=1.5.0";
 import "assets/demo/nucleo-icons-page-styles.css?v=1.5.0";
 // pages for this kit
-import ProfilePage from "views/examples/ProfilePage.js";
+import ProfilePage from "./components/ProfilePage.js";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 

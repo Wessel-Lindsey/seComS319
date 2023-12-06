@@ -10,10 +10,10 @@ import {
 import "assets/css/profile.css";
 
 // core components
-import ExamplesNavbar from "Navbar.js";
-import ProfilePageHeader from "Header.js";
-import DefaultFooter from "Footer.js";
-import Carousel from "Carousel.js";
+import ExamplesNavbar from "./NavBar.js";
+import ProfilePageHeader from "./Header.js";
+import DefaultFooter from "./Footer.js";
+import Carousel from "../Carousel.js";
 
 function ProfilePage() {
   React.useEffect(() => {

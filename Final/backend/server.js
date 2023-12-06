@@ -30,7 +30,7 @@ app.get("/get", async (req, res) => {
   console.log("Node connected successfully to GET MongoDB");
   const query = {};
   const results = await db
-    .collection("soundClips")
+    .collection("clip")
     .find(query)
     .limit(100)
     .toArray();
@@ -41,14 +41,14 @@ app.get("/get", async (req, res) => {
   res.send(results);
 });
 
-// app.get("/:id", async (req, res) => {
-//   const num = Number(req.params.id);
-//   console.log("Clip to find :", num);
-//   await client.connect();
-//   console.log("Node connected successfully to GET-id MongoDB");
-//   const query = { id: num };
-//   const results = await db.collection("soundClips").findOne(query);
-//   console.log("Results :", results);
-//   if (!results) res.send("Not Found").status(404);
-//   else res.send(results).status(200);
-// });
+app.get("/:id", async (req, res) => {
+  const num = Number(req.params.id);
+  console.log("Clip to find :", num);
+  await client.connect();
+  console.log("Node connected successfully to GET-id MongoDB");
+  const query = { id: num };
+  const results = await db.collection("clip").findOne(query);
+  console.log("Results :", results);
+  if (!results) res.send("Not Found").status(404);
+  else res.send(results).status(200);
+});
