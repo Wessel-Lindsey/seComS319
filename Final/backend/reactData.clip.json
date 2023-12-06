@@ -23,7 +23,7 @@
   "id": 2,
   "title": "Audiobook Children Fiction Demo",
   "soundSample": "https://drive.google.com/uc?id=1EkNxNjfI1d4u2sAXZ1PWRqqxtEqImcwf",
-  "text": "This is an animation sample"
+  "text": "This is an of clidren's fiction. "
 },
 {
   "_id": {
@@ -32,7 +32,7 @@
   "id": 3,
   "title": "Commercial Demo",
   "soundSample": "https://drive.google.com/uc?id=1_BkL3vhbc4tP4k0SHCYJyUjwwWOnbtT4",
-  "text": "This is an animation sample"
+  "text": "This is a commercial sample"
 },
 {
   "_id": {
@@ -41,7 +41,7 @@
   "id": 4,
   "title": "eLearning Demo",
   "soundSample": "https://drive.google.com/uc?id=1Z4VQZGsb-YhOB8HanNrnniHiInQgMYyt",
-  "text": "Having previously been a teacher, I have "
+  "text": "Having previously been a teacher, I have expirience delivering educational content online."
 },
 {
   "_id": {
@@ -50,7 +50,7 @@
   "id": 5,
   "title": "Self Development Demo",
   "soundSample": "https://drive.google.com/uc?id=1ke5238SAwm5Xujj-wGs4bba0pgSkF5Xh",
-  "text": "This is an animation sample"
+  "text": "This is an self development sample"
 },
 {
   "_id": {
@@ -59,7 +59,7 @@
   "id": 6,
   "title": "Telephone and IRV Demo",
   "soundSample": "https://drive.google.com/uc?id=1ZpjOj8Gkqji8yE3YmyKI2IC4MrunE3Bt",
-  "text": "This is an animation sample"
+  "text": "This is an telephone and IRV sample"
 },
 {
   "_id": {
@@ -68,5 +68,5 @@
   "id": 7,
   "title": "Video Game Demo",
   "soundSample": "https://drive.google.com/uc?id=1S_udmhiS_w3lRyB6XdyxMB-D2JHAbN1X",
-  "text": "This is an animation sample"
+  "text": "This is an video game sample"
 }]
