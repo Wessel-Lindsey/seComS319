@@ -10,10 +10,11 @@ import {
 import "assets/css/profile.css";
 
 // core components
-import ExamplesNavbar from "./NavBar.js";
+import Navbar from "./NavBar.js";
 import ProfilePageHeader from "./Header.js";
-import DefaultFooter from "./Footer.js";
-import Carousel from "../Carousel.js";
+import Footer from "./Footer.js";
+import Carousel from "./Carousel.js";
+import ContactForm from "./ContactForm.js";
 
 function ProfilePage() {
   React.useEffect(() => {
@@ -29,15 +30,16 @@ function ProfilePage() {
   }, []);
   return (
     <>
-      <ExamplesNavbar />
+      <Navbar />
       <div className="wrapper">
         <ProfilePageHeader />
         <div className="section">
           <Container>
             <div className="button-container">
-              <Button className="btn-round" color="info" size="lg">
+              <ContactForm/>
+              {/* <Button className="btn-round" color="info" size="lg">
                 Contact Me
-              </Button>
+              </Button> */}
               <Button
                 className="btn-round btn-icon"
                 color="default"
@@ -66,7 +68,7 @@ function ProfilePage() {
             </div>
           </Container>
         </div>
-        <DefaultFooter />
+        <Footer />
       </div>
     </>
   );

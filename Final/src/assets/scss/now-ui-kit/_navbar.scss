@@ -4,9 +4,9 @@
     min-height: 53px;
     margin-bottom: 20px;
     box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.15);
+    vertical-align: middle;
 
     a{
-        vertical-align: middle;
 
         &:not(.btn):not(.dropdown-item){
             color: $white-color;
@@ -42,13 +42,16 @@
                 padding: $padding-small-vertical $padding-small-horizontal;
             }
         }
+        
+        .nav-link_custom{
+            line-height: 2rem
+        }
 
         .nav-link:not(.btn){
             text-transform: uppercase;
             font-size: $font-size-mini;
             padding: $padding-base-vertical $padding-base-horizontal;
             line-height: $line-height-nav-link;
-
             i.fab + p,
             i.now-ui-icons + p{
                 margin-left: 3px;

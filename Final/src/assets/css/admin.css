@@ -1,0 +1,27 @@
+.boxed{
+    background-color: lightgray;
+    border-radius: 5px;
+    margin-top: 5%;
+}
+h3{
+    font-size: 1.825em;
+    margin-bottom: 0px;
+    line-height: 1.4em;
+}
+
+.scroller{
+    margin-top: 10%;
+    overflow:"auto";
+}
+.invis{
+    visibility: hidden;
+}
+.input{
+    margin-top: 5px;
+    margin-left: 0;
+}
+.deleteBox{
+    width:fit-content;
+    align-items: baseline !important;
+    /* margin-top: 0; */
+}

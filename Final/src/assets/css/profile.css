@@ -7,7 +7,12 @@
     grid-template-columns: 1fr 1fr;
     column-gap: 35px;
 }
-
+.container_flex_center{
+  margin-top:"25px";
+  display:"flex";
+  justify-content: "center";
+  align-items: "flex-start";
+}
 .description,
 .card-description,
 .footer-big p {

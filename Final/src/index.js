@@ -27,6 +27,7 @@ import "assets/demo/demo.css?v=1.5.0";
 import "assets/demo/nucleo-icons-page-styles.css?v=1.5.0";
 // pages for this kit
 import ProfilePage from "./components/ProfilePage.js";
+import Admin from "./components/Admin.js";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
@@ -34,7 +35,7 @@ root.render(
   <BrowserRouter>
     <Routes>
       <Route path="/profile-page" element={<ProfilePage />} />
-      <Route path="/about" element={<ProfilePage />} />
+      <Route path="/admin" element={<Admin />} />
       <Route path="*" element={<Navigate to="/profile-page" replace />} />
     </Routes>
   </BrowserRouter>

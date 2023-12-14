@@ -2,7 +2,7 @@
 .navbar .navbar-nav > a.btn{
     border-width: $border-thick;
     font-weight: $font-weight-normal;
-    font-size: $font-size-small;
+    // font-size: $font-size-small;
     line-height: $line-height;
     margin: 10px 1px;
     border: none;
@@ -104,6 +104,18 @@
         padding: $padding-btn-vertical - 1  $padding-round-horizontal - 1;
     }
 }
+.btn-round-color{
+    border-width: $border-thin;
+    border-radius: $btn-round-radius !important;
+    height: 50px;
+    width: 150px;
+    padding: $padding-btn-vertical  $padding-round-horizontal;
+    background-color: #2ca8ff !important;
+    &[class*="btn-outline-"]{
+        padding: $padding-btn-vertical - 1  $padding-round-horizontal - 1;
+    }
+}
+
 [class*="btn-outline-"]{
     border: $border;
     padding: $padding-btn-vertical - 1 $padding-round-horizontal - 1;
@@ -205,4 +217,11 @@
   &:active:focus {
     color: $social-linkedin !important;
   }
+}
+.admin{
+    margin-left: 15px;
+    border: none !important;
+}
+.admin:hover{
+    cursor:pointer;
 }
