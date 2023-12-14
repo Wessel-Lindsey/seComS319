@@ -12,10 +12,10 @@ import {
 import { render } from "react-dom";
 // core components
 
-function DefaultFooter() {
+function DefaultAdmin() {
   return (
     <>
-      <footer className="footer footer-default">
+      <footer className="footer footer-admin">
         <Container>
 
           <div className="copyright" id="copyright">
@@ -36,11 +36,11 @@ function DefaultFooter() {
             .
 
             <a
-              href="./Admin"
+              href="./ProfilePage"
               // target="_blank"
               className="admin"
             >
-              Admin
+              Return
             </a>
             {/* <Nav>
               <NavLink>
@@ -60,4 +60,4 @@ function DefaultFooter() {
   );
 }
 
-export default DefaultFooter;
+export default DefaultAdmin;

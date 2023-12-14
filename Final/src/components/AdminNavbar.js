@@ -12,30 +12,11 @@ import {
 } from "reactstrap";
 
 function PageNavbar() {
-  const [navbarColor, setNavbarColor] = React.useState("navbar-transparent");
+  const [navbarColor, setNavbarColor] = React.useState("");
   const [collapseOpen, setCollapseOpen] = React.useState(false);
-  React.useEffect(() => {
-    const updateNavbarColor = () => {
-      if (
-        document.documentElement.scrollTop > 399 ||
-        document.body.scrollTop > 399
-      ) {
-        setNavbarColor("");
-      } else if (
-        document.documentElement.scrollTop < 400 ||
-        document.body.scrollTop < 400
-      ) {
-        setNavbarColor("navbar-transparent");
-      }
-    };
-    window.addEventListener("scroll", updateNavbarColor);
-    return function cleanup() {
-      window.removeEventListener("scroll", updateNavbarColor);
-    };
-  });
   return (
     <>
-      {collapseOpen ? (
+      {/* {collapseOpen ? (
         <div
           id="bodyClick"
           onClick={() => {
@@ -43,7 +24,7 @@ function PageNavbar() {
             setCollapseOpen(false);
           }}
         />
-      ) : null}
+      ) : null} */}
       <Navbar className={"fixed-top " + navbarColor} color="info" expand="lg">
         <Container>
           <Collapse
@@ -62,7 +43,7 @@ function PageNavbar() {
                 </NavLink>
               </NavItem> */}
               <NavItem>
-                <NavLink href="javascript:document.querySelector('#ContactForm').click()">
+                <NavLink href="https://www.linkedin.com/in/voslade/">
                   Contact Me
                 </NavLink>
               </NavItem>
@@ -86,4 +67,5 @@ function PageNavbar() {
     </>
   );
 }
+
 export default PageNavbar;
